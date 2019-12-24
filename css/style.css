@@ -64,7 +64,7 @@
 
 /* ================================================== */
 
-@import url("../fonts/font-awesome/css/font-awesome.css");
+@import url("../fonts/font-awesome/css/font-awesome.min.css");
 @import url("../fonts/elegant_font/HTML_CSS/style.css");
 @import url("../fonts/et-line-font/style.css");
 
@@ -133,7 +133,7 @@ header {
 	width: 100%;
 	min-width: 400px;
 	height: 60vh;
-	background-image: url("../logos/logo.png");
+	background-image: url("../logos/sorella-logo-new.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -207,7 +207,7 @@ header.autoshow.scrollOff {
 #logo-image {
 	height: 75px;
 	width: 250px;
-	background-image: url("../logos/logo.png");
+	background-image: url("../logos/sorella-logo-new.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -617,7 +617,7 @@ header.de_header_2.smaller .info {
 	z-index: 100;
 }
 #menu-btn:before {
-	font-family: FontAwesome;
+	font-family: "FontAwesome";
 	content: "\f0c9";
 	font-size: 24px;
 }
@@ -1568,7 +1568,7 @@ a.btn-slider:hover {
 	border: solid 2px #fff;
 }
 a.btn-custom:hover, .btn-custom:hover {
-	color: #de4eaf;
+	color: #ed96a8;
 	opacity: .8;
 	-webkit-box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.3);
@@ -1591,7 +1591,7 @@ a.btn-dark.btn-id {
 .btn-custom {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #de4eaf;
+	color:#ed96a8;
 	letter-spacing: 2px;
 }
 .btn-custom.btn-small {
@@ -1636,8 +1636,8 @@ a.btn-custom, .btn-custom, a.btn-slider, .btn-slider {
 	font-size: 12px;
 }
 a.btn-custom, .btn-custom {
-	border: solid #de4eaf 2px;
-	color: #de4eaf;
+	border: solid #ed96a8 2px;
+	color: #ed96a8;
 	padding: 10px 30px 10px 30px;
 	min-width: 120px;
 	border-radius: none;
@@ -2045,7 +2045,7 @@ h2.hs1 {
 }
 
 #theme-color {
-	color:#de4eaf;
+	color:#ed96a8;
 }
 
 h2.hs1 i {
@@ -6231,7 +6231,7 @@ a, img {
 			margin:0;
 			width: 100%;
 			height: 50vh;
-			background-image: url("../logos/logo.png");
+			background-image: url("../logos/sorella-logo-new.png");
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -6244,7 +6244,7 @@ a, img {
 	#hero-logo {
 		width: 300px;
 		height: 50vh;
-		background-image: url("../logos/logo.png");
+		background-image: url("../logos/sorella-logo-new.png");
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;

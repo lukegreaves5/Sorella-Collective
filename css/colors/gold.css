@@ -59,7 +59,7 @@ span.overlay,
 .social-icons-sm i:hover,
 .overlay-v i:before
 {
-	background-color:#de4eaf ;
+	background-color:#ed96a8 ;
 }
 
 .feature-box i,
@@ -113,7 +113,7 @@ h2.hs1 span,
 header div#logo h2 span,
 #menu-btn
 {
-	color:#de4eaf
+	color:#ed96a8
 }
 
 .feature-box i,
@@ -135,7 +135,7 @@ header div#logo h2 span,
 .box-border
 {
 
-	border-color:#de4eaf ;
+	border-color:#ed96a8 ;
 }
 
 .box-fx .inner,
@@ -152,34 +152,34 @@ header div#logo h2 span,
 .text-light .separator span:after ,
 .form-underline input[type=text]:focus, .form-underline textarea:focus, .form-underline input[type=email]:focus, .form-underline select:focus
 {
-	border-bottom-color:#de4eaf ;
+	border-bottom-color:#ed96a8 ;
 }
 
 .arrow-down,
 .preloader1{
-	border-top-color:#de4eaf ;
+	border-top-color:#ed96a8 ;
 }
 
 .callbacks_nav {
-	background-color:#de4eaf ;
+	background-color:#ed96a8 ;
 }
 
 
 .de_tab .de_nav li span {
-border-top: 3px solid #de4eaf ;
+border-top: 3px solid #ed96a8 ;
 }
 
 .feature-box-big-icon i:after {
-border-color: #de4eaf  transparent; /*same colour as the lower of the bubble's gradient*/
+border-color: #ed96a8  transparent; /*same colour as the lower of the bubble's gradient*/
 }
 
 .de_review li.active img{
-	border:solid 4px #de4eaf ;
+	border:solid 4px #ed96a8 ;
 }
 
 
 blockquote{
-border-left-color:#de4eaf ;
+border-left-color:#ed96a8 ;
 }
 
 
