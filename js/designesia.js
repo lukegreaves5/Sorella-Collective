@@ -8,7 +8,7 @@
 	
 	/* 	set navigation color solid or transparent 
 		value: 1 - solid, 2 - transparent */
-	var opt_nav_style = 2;
+	var opt_nav_style = 1;
 	
 	/* 	enable or disable sticky navigation 
 		value: 1 - enable , 0 - disable */

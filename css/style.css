@@ -2834,7 +2834,7 @@ a.accordion-toggle, a:visited.accordion-toggle {
 	color: #fff;
 }
 .de_tab.tab_steps.style-2 .de_nav li.active span {
-	border: solid 2px rgba(255, 255, 255, .8);
+	border: solid 2px rgba(255, 255, 255);
 	color: #222;
 }
 .de_tab.tab_steps .de_nav li span:hover {
