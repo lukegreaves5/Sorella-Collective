@@ -891,6 +891,22 @@
 			if (iteration > 2) iteration = 1;
 			$(this).data('iteration', iteration);
 		});
+
+		jQuery(".contact").on("click", function() {
+			var iteration = $(this).data('iteration') || 1;
+			switch (iteration) {
+				case 1:
+					jQuery('#popup-box').addClass('popup-show');
+					jQuery('#popup-box').removeClass('popup-hide');
+					break;
+				case 2:
+					break;
+			}
+			iteration++;
+			if (iteration > 2) iteration = 1;
+			$(this).data('iteration', iteration);
+		});
+
 		jQuery(".btn-close").on("click", function() {
 			var iteration = $(this).data('iteration') || 1;
 			switch (iteration) {
