@@ -23,9 +23,8 @@ $message .= 'Email : ' . $email . "\n";
 $message .= 'Phone Number : ' . $number . "\n";
 $message .= 'Wedding Date : ' . $date . "\n";
 $message .= 'Wedding Location : ' . $location . "\n";
-$message .= 'Message : ' . $msg;
 
-if (@mail($to, $subject, $location, $email_from))
+if (mail($to, $subject, $message, $email_from))
 {
 	// Transfer the value 'sent' to ajax function for showing success message.
 	echo 'sent';
