@@ -8,10 +8,12 @@
             var error = false;
             var name = $('#name').val();
             var email = $('#email').val();
-			var guest = $('#guest').val();
-            var attend = $('#attend').val();
+			var number = $('#number').val();
+            var date = $('#date').val();
+            var location = $('#location').val();
+            var reference = $('#reference').val();
 			
-			$('#name,#email,#guest,#attend').click(function(){
+			$('#name,#email,#numnber,#date,#location,#reference').click(function(){
 				$(this).removeClass("error_input");
 			});
             
@@ -28,17 +30,29 @@
             }else{
                 $('#email').removeClass("error_input");
             }
-			 if(!$('#guest').val()) {
+			if(!$('#number').val()) {
                 var error = true;
-                $('#guest').addClass("error_input");
+                $('#number').addClass("error_input");
             }else{
-                $('#guest').removeClass("error_input");
+                $('#number').removeClass("error_input");
             }
-           if(!$('#attend').val()) {
+            if(!$('#date').val()) {
                 var error = true;
-                $('#attend').addClass("error_input");
+                $('#date').addClass("error_input");
             }else{
-                $('#attend').removeClass("error_input");
+                $('#date').removeClass("error_input");
+            }
+            if(!$('#location').val()) {
+                var error = true;
+                $('#location').addClass("error_input");
+            }else{
+                $('#location').removeClass("error_input");
+            }
+            if(!$('#reference').val()) {
+                var error = true;
+                $('#reference').addClass("error_input");
+            }else{
+                $('#reference').removeClass("error_input");
             }
 			
 			
@@ -48,7 +62,7 @@
                 $('#submit').attr({'disabled' : 'true', 'value' : 'Sending...' });
                 
 				/* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-                $.post("email.php", $("#contact_form").serialize(),function(result){
+                $.post("rsvp.php", $("#contact_form").serialize(),function(result){
                     //Check the result set from email.php file.
                     if(result == 'sent'){
                         //If the email is sent successfully, remove the submit button
@@ -59,7 +73,7 @@
                         //Display the error message
                         $('#mail_fail').fadeIn(500);
                         // Enable the submit button again
-                        $('#submit').removeAttr('disabled').attr('value', 'Send The Message');
+                        $('#submit').removeAttr('disabled').attr('value', 'Try Again');
                     }
                 });
             }
