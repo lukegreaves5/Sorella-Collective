@@ -1,6 +1,3 @@
-/* --------------------------------------------------
- * © Copyright 2017 - Lovus by Designesia
- * --------------------------------------------------*/
 (function($) {
 	/* --------------------------------------------------
 	 * quick settings
@@ -24,7 +21,7 @@
 	
 	/* 	enable or disable back to top button 
 		value: 1 - enable , 0 - disable */
-	var opt_back_to_top = 1;
+	var opt_back_to_top = 0;
 	
 	/* 	enable or disable page transition and preloader 
 		value: 1 - enable , 0 - disable */
@@ -34,7 +31,7 @@
 	var opt_page_trans_in = 'fade-in';
 	
 	/* 	custom transition for page out (please read documentation) */ 
-	var opt_page_trans_out = 'fade-out-up-sm';
+	var opt_page_trans_out = 'fade-out';
 	
 	/* --------------------------------------------------
 	 * predefined vars
@@ -103,6 +100,18 @@
 			vscroll = 0;
 		}
 	}
+
+	/* --------------------------------------------------
+	 * When logos are clicked - direct to home page
+	 * --------------------------------------------------*/
+
+	 function gohome() {
+		window.location.href="../index.html"
+	 };
+
+	 $("#logo-image").on("click", gohome);
+	 $("#footer-logo").on("click", gohome);
+
 	/* --------------------------------------------------
 	 * plugin | magnificPopup
 	 * --------------------------------------------------*/
@@ -656,6 +665,7 @@
 				jQuery("#rq_step_2").fadeIn();
 			}
 		});
+
 		// --------------------------------------------------
 		// tabs
 		// --------------------------------------------------
@@ -739,13 +749,13 @@
 					$(this).parent().find("ul:first").css("height", "0");
 					$(this).parent().find("ul:first").animate({
 						'height': curHeight
-					}, 400, 'easeInOutQuint');
+					}, 100, 'easeInOutQuint');
 					break;
 				case 2:
 					$(this).removeClass("active");
 					$(this).parent().find("ul:first").animate({
 						'height': "0"
-					}, 400, 'easeInOutQuint');
+					}, 100, 'easeInOutQuint');
 					break;
 			}
 			iteration++;
@@ -763,13 +773,13 @@
 					$(this).parent().find("ul:first").css("height", "0");
 					$(this).parent().find("ul:first").animate({
 						'height': curHeight
-					}, 400, 'easeInOutQuint');
+					}, 100, 'easeInOutQuint');
 					break;
 				case 2:
 					$(this).removeClass("active");
 					$(this).parent().find("ul:first").animate({
 						'height': "0"
-					}, 400, 'easeInOutQuint');
+					}, 100, 'easeInOutQuint');
 					break;
 			}
 			iteration++;
@@ -1070,38 +1080,7 @@
 			}
 		}
 		
-		if (opt_page_trans == 1) {
-			jQuery('body').addClass('animsition');
-			jQuery('header a').each(function() {
-				if (this.getAttribute("href").charAt(0) !== "#") {
-					jQuery(this).addClass('animsition-link');
-				}
-			});
-			$(".animsition").animsition({
-				inClass: opt_page_trans_in,
-				outClass: opt_page_trans_out,
-				inDuration: 1500,
-				outDuration: 800,
-				linkElement: '.animsition-link',
-				// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-				loading: true,
-				loadingParentElement: 'body', //animsition wrapper element
-				loadingClass: 'animsition-loading',
-				loadingInner: '', // e.g '<img src="loading.svg" />'
-				timeout: false,
-				timeoutCountdown: 5000,
-				onLoadEvent: true,
-				browser: ['animation-duration', '-webkit-animation-duration'],
-				// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-				// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-				overlay: false,
-				overlayClass: 'animsition-overlay-slide',
-				overlayParentElement: 'body',
-				transition: function(url) {
-					window.location.href = url;
-				}
-			});
-		}
+		
 		// --------------------------------------------------
 		// blog list hover
 		// --------------------------------------------------
@@ -1217,7 +1196,7 @@
 			init();
 			centerY();
 			// hide preloader after loaded
-			jQuery('#preloader').delay(500).fadeOut(500);
+			jQuery('#preloader').delay(200).fadeOut(500);
 			// one page navigation
 			/**
 			 * This part causes smooth scrolling using scrollto.js

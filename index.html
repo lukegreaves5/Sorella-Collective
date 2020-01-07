@@ -5,11 +5,18 @@
     <meta charset="utf-8">
     <title>Sorella Collective - Wedding Day Hair Stylists</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sorella Collective">
-    <meta name="keywords" content="Wedding hair stylist">
-    <meta name="author" content="">
+    <meta name="description" content="Wedding hair stylists - Making your dream wedding day style a reality. We travel to the location where you are getting ready, making your special day relaxing, convenient & comfortable. We would be honored to style you & your tribe. Contact us, let’s chat!">
+    <meta name="keywords" content="Wedding hair stylists, Wedding Stylists, Wedding Day, Stylists, Bridal Hair, New York, Westchester">
+    <meta name="author" content="Sorella Collective">
+    <meta name="og:title" content="Sorella Collective - Wedding Day Hair Stylists"/>
+    <meta name="og:url" content="https://www.sorellacollectiveco.com"/>
+    <meta name="og:image" content="./logos/sorella-collective-meta.png"/>
+    <meta name="og:description" content="Wedding hair stylists, Wedding Stylists, Wedding Day, Stylists, Bridal Hair, New York, Westchester"/>
+    <meta name="og:email" content="info@sorellacollectiveco.com"/>
+    <meta itemprop="thumbnailUrl" content="./logos/sorella-collective-meta.png">
     
-    <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/SsGVtrK/sorella-logo-new.png"/>
+    <link rel="shortcut icon" type="image/png" href="./logos/sorella-collective-meta.png"/>
+
 
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -20,6 +27,7 @@
     ================================================== -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
@@ -28,7 +36,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/animsition.min.css" type="text/css">
     <link href="db.onlinewebfonts.com/c/bd1f28c07b5011d83f845a216c19bc6b?family=Bayshore" rel="stylesheet" type="text/css"/>
-
 
     <!-- custom background -->
 
@@ -50,7 +57,7 @@
 
                         <div id="logo">
                           <div id="logo-image"></div>
-                            <a href="index.html"></a>
+                            <a href="./index.html"></a>
                         </div>
                         <!-- logo close -->
 
@@ -63,15 +70,15 @@
                         <!-- mainmenu begin -->
                         <nav>
                             <ul id="mainmenu">
-                                <li><a href="index.html">Home</a>
+                                <li><a href="./index.html">Home</a>
                                 </li>
-                                <li><a href="about.html">About</a>
+                                <li><a href="./about.html">About</a>
                                 </li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
                                 <li><a href="#">Resources</a>
                                     <ul>
-                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <li><a href="./faqs.html">FAQs</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -103,8 +110,6 @@
 
                         <div class="col-md-12 text-center">
                             <div>We are so excited to hear about your big day!<br><br> Please fill out the form for additional information on pricing and date availability.</div>
-                            <br>
-                            <div>Alternatively, feel free to give us a call at <a href="tel:8456741698">(845) 674-1698</a></div>
                         </div>
 
                         <div class="spacer-double"></div>
@@ -112,7 +117,11 @@
                         <form name="rsvp" id='contact_form' class="form-underline" method="POST" action="/rsvp.php">
 
                             <div class="col-md-4">
-                                <input type='text' name='name' id='name' class="form-control" placeholder="First & Last Name">
+                                <input type='text' name='first-name' id='first-name' class="form-control" placeholder="First Name">
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type='text' name='last-name' id='last-name' class="form-control" placeholder="Last Name">
                             </div>
 
                             <div class="col-md-4">
@@ -120,18 +129,18 @@
                             </div>
 
                             <div class="col-md-4">
-                                <input type='text' name='number' id='number' class="form-control" placeholder="Phone Number">
+                                <input type='number' name='number' id='number' class="form-control" placeholder="Phone Number">
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type='text' name='location' id='location' class="form-control" placeholder="Wedding Venue and Location">
                             </div>
 
                             <div class="col-md-4">
                                 <input type='text' name='date' id='date' class="form-control" placeholder="Wedding Date">
                             </div>
 
-                            <div class="col-md-4">
-                                <input type='text' name='location' id='location' class="form-control" placeholder="Wedding Location">
-                            </div>
-
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-md-offset-4">
                                 <input type='text' name='reference' id='reference' class="form-control" placeholder="How did you hear about us?">
                             </div>
 
@@ -164,7 +173,6 @@
                                 <div class="row">
                                     <div id="centered" class="col-md-12 text-center">
                                         <div id="hero-logo"></div>
-                     
                                     </div>
                                 </div>
                             </div>
@@ -190,16 +198,32 @@
             <!-- section begin -->
             <section aria-label="section" class="no-bottom">
                 <div class="container">
-                    <div class="row">
+                    <div class="row wow fadeIn">
                         <div class="col-md-12 text-center">
                             <h2 id="xl-font" class="theme-color wow fadeInUp"><span>Wedding Day Hair Sylists</span></h2>
                             <br>
-                            <h2 id="large-font"><h3 class="wow fadeIn">THIS IS US</h3></h2>
+                            <h2 id="large-font" class="wow fadeIn"><h3 class="wow fadeIn">THIS IS US</h3></h2>
                             <p class="wow fadeIn">Meet the women behind the chair & hair. Sorellas who are fiercely passionate about all things beauty. We truly believe that the day of your wedding should be fun, calm and run seamlessly start to finish. That’s exactly why we’re here. We travel to the location where you are getting ready, making your special day relaxing, convenient & comfortable. We would be honored to style you & your tribe. Contact us, let’s chat!</p>
                         </div>
                     </div>
                     <div class="spacer-double"></div>
                     <div id="justify-evenly">
+
+                        <div class="col-md-3" id="below-990px">
+                            <div id="inner-border"></div>
+                            <figure class="picframe mb20 wow fadeInUp">
+                                <div id="inner-border"></div>
+                                <a class="image-popup" href="images/slider/11.jpg">
+                                    <span class="overlay-v">
+                                        <i></i>
+                                    </span>
+                                </a>
+                                <img src="images/slider/11.jpg" class="img-responsive" alt="">
+                            </figure>
+                            <div id="centered" class="margin-bottom-20 wow fadeInUp">
+                                <a href="#" id="no-radius" class="btn btn-custom mt30 contact">Contact Us</a>
+                            </div>
+                        </div>
 
                         <div class="col-md-3">
                             <div id="inner-border"></div>
@@ -214,11 +238,11 @@
 
                             </figure>
                             <div id="centered" class="margin-bottom-20 wow fadeInUp">
-                                <a href="services.html" id="no-radius" class="btn btn-custom mt30">View Services</a>
+                                <a href="./services.html" id="no-radius" class="btn btn-custom mt30">View Services</a>
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3" id="over-990px">
                             <div id="inner-border"></div>
                             <figure class="picframe mb20 wow fadeInUp">
                                 <div id="inner-border"></div>
@@ -246,7 +270,7 @@
                                 <img src="images/slider/13.jpg" class="img-responsive" alt="">
                             </figure>
                             <div id="centered" class="margin-bottom-20 wow fadeInUp">
-                                <a href="portfolio.html" id="no-radius" class="btn btn-custom mt30">Our Portfolio</a>
+                                <a href="./portfolio.html" id="no-radius" class="btn btn-custom mt30">Our Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -265,13 +289,12 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 id="theme-color" class="hs1 wow fadeInUp">Sorella Collective</h2>
+                        <h2 id="theme-color" class="hs1 wow fadeInUp"><div id="footer-logo"></div></h2>
                          <!-- social icons -->
                          <div class="social-icons-sm wow fadeInDown">
                             <a href="https://www.instagram.com/sorella.collective/?hl=en" target="_blank"><p class="instagram">Follow Us  <i class="fa fa-instagram"></i></p></a>
                         </div>
                         <!-- social icons close -->
-                        <a href="tel:8456741698" target="_blank">(845) 674-1698</a><br>
                         <a href="mailto:info@sorellacollectiveco.com" target="_blank">info@sorellacollectiveco.com</a>
                     </div>
                 </div>
@@ -290,9 +313,7 @@
         <!-- footer close -->
 
         <a href="#" id="back-to-top"></a>
-        <div id="preloader">
-            <div class="preloader1"></div>
-        </div>
+
     </div>
 	
 
@@ -312,8 +333,8 @@
     <script src="./js/jquery.plugin.js"></script>
     <script src="./js/jquery.countdown.js"></script>
     <script src="./js/countdown-custom.js"></script>
-    <script src="./js/animsition.min.js"></script>
     <script src="./js/designesia.js"></script>
+    <script src="./js/animsition.min.js"></script>
 
 </body>
 

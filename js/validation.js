@@ -2,16 +2,18 @@ $(document).ready(function() {
     $("#send_message").click(function(a) {
         a.preventDefault();
         var b = !1,
-            c = $("#name").val(),
+            c = $("#first-name").val(),
+            l = $("#last-name").val(),
             d = $("#email").val(),
             e = $("#phone").val(),
             f = $("#message").val();
-        if ($("#name,#email,#phone,#message").click(function() {
+        if ($("#first-name,#last-name,#email,#phone,#message").click(function() {
                 $(this).removeClass("error_input")
             }), 0 == c.length) {
             var b = !0;
-            $("#name").addClass("error_input")
-        } else $("#name").removeClass("error_input");
+            $("#first-name").addClass("error_input")
+            $("#last-name").addClass("error_input")
+        } else $("#first-name").removeClass("error_input");
         if (0 == d.length || "-1" == d.indexOf("@")) {
             var b = !0;
             $("#email").addClass("error_input")

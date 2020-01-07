@@ -6,7 +6,8 @@
             
             // Variable declaration
             var error = false;
-            var name = $('#name').val();
+            var first_name = $('#first-name').val();
+            var last_name = $('#last-name').val();
             var email = $('#email').val();
 			var number = $('#number').val();
             var date = $('#date').val();
@@ -18,11 +19,17 @@
 			});
             
          	// Form field validation
-            if(name.length == 0){
+            if(first_name.length == 0){
                 var error = true;
-                $('#name').addClass("error_input");
+                $('#first-name').addClass("error_input");
             }else{
-                $('#name').removeClass("error_input");
+                $('#first-name').removeClass("error_input");
+            }
+            if(last_name.length == 0){
+                var error = true;
+                $('#last-name').addClass("error_input");
+            }else{
+                $('#last-name').removeClass("error_input");
             }
             if(email.length == 0 || email.indexOf('@') == '-1'){
                 var error = true;
