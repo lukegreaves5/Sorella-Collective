@@ -1,6 +1,6 @@
 <?php
 $subject = "Customer Inquiry from Website"; // Subject of your email
-$to = 'contact@lukegreaves.net';  //Recipient's E-mail
+$to = 'info@sorellacollectiveco.com';  //Recipient's E-mail
 $emailTo = $_REQUEST['email'];
 
 $first_name = $_REQUEST['first-name'];
@@ -12,12 +12,7 @@ $location = $_REQUEST['location'];
 $reference = $_REQUEST['reference'];
 $msg = $_REQUEST['message'];
 
-$email_from = $name.'<'.$email.'>';
-
-$headers = "MIME-Version: 1.1";
-$headers .= "Content-type: text/html; charset=iso-8859-1";
-$headers .= "Reply to: " . $first_name . " " . $last_name . " at" . $email . "\r\n"; // Sender's E-mail
-$headers .= "Return-Path:"."From:" . $email;
+$email_from = $email .'<'.$email.'>';
 
 $message .= "Hi," . "\n" . "\n";
 $message .= "I am reaching out from your website. I would love to learn more about your date availability and pricing." . "\n" . "Please see my details below:" . "\n" . "\n";
@@ -31,6 +26,11 @@ $message .= 'Where did I hear about Sorella Collective? : ' . $reference . "\n" 
 $message .= 'Best Regards,' . "\n" . $first_name . " " . $last_name . "\n" . "\n";
 
 $message .= 'To respond to this customer enquiry, reply to ' . $email;
+
+$headers = "From:" . $email . "\r\n";
+$headers .= "Reply-To:" . $email . "\r\n";
+$headers .= "X-Mailer: PHP/".phpversion();
+
 
 if (mail($to, $subject, $message, $headers))
 {
