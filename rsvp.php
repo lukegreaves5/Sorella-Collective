@@ -29,7 +29,7 @@ $message .= 'To respond to this customer enquiry, reply to ' . $email;
 $message = wordwrap($message, 70);
 
 $headers = "From:" . $to . "\r\n";
-$headers .= "Reply-To:" . $email . "\r\n";
+//$headers .= "Reply-To:" . $email . "\r\n";
 $headers .= "X-Mailer: PHP/".phpversion();
 
 
