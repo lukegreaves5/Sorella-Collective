@@ -1,6 +1,6 @@
 <?php
-$subject = "Customer Inquiry from Website"; // Subject of your email
-$to = 'info@sorellacollectiveco.com';  //Recipient's E-mail
+$subject = "Customer Inquiry"; // Subject of your email
+$to = 'contact@lukegreaves.net';  //Recipient's E-mail
 $emailTo = $_REQUEST['email'];
 
 $first_name = $_REQUEST['first-name'];
@@ -12,7 +12,7 @@ $location = $_REQUEST['location'];
 $reference = $_REQUEST['reference'];
 $msg = $_REQUEST['message'];
 
-$email_from = $email .'<'.$email.'>';
+$email_from = $email;
 
 $message .= "Hi," . "\n" . "\n";
 $message .= "I am reaching out from your website. I would love to learn more about your date availability and pricing." . "\n" . "Please see my details below:" . "\n" . "\n";
@@ -26,6 +26,7 @@ $message .= 'Where did I hear about Sorella Collective? : ' . $reference . "\n" 
 $message .= 'Best Regards,' . "\n" . $first_name . " " . $last_name . "\n" . "\n";
 
 $message .= 'To respond to this customer enquiry, reply to ' . $email;
+$message = wordwrap($message, 70);
 
 $headers = "From:" . $email . "\r\n";
 $headers .= "Reply-To:" . $email . "\r\n";
