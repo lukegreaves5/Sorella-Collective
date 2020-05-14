@@ -1,6 +1,6 @@
 <?php
 $subject = "Customer Inquiry"; // Subject of your email
-$to = 'contact@lukegreaves.net';  //Recipient's E-mail
+$to = 'info@sorellacollectiveco.com';  //Recipient's E-mail
 $emailTo = $_REQUEST['email'];
 
 $first_name = $_REQUEST['first-name'];
