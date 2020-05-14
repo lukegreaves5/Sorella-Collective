@@ -14,7 +14,7 @@ $msg = $_REQUEST['message'];
 
 $email_from = $email;
 
-$message .= "Hi," . "\n" . "\n";
+$message .= "Hi Sorella Collective," . "\n" . "\n";
 $message .= "I am reaching out from your website. I would love to learn more about your date availability and pricing." . "\n" . "Please see my details below:" . "\n" . "\n";
 $message .= 'Name : ' . $first_name . " " . $last_name . "\n";
 $message .= 'Email Address : ' . $email . "\n";
@@ -28,7 +28,7 @@ $message .= 'Best Regards,' . "\n" . $first_name . " " . $last_name . "\n" . "\n
 $message .= 'To respond to this customer enquiry, reply to ' . $email;
 $message = wordwrap($message, 70);
 
-$headers = "From:" . $email . "\r\n";
+$headers = "From:" . $to . "\r\n";
 $headers .= "Reply-To:" . $email . "\r\n";
 $headers .= "X-Mailer: PHP/".phpversion();
 
