@@ -47,8 +47,15 @@
 
 
 /* import custom fonts */
-
-@font-face { font-family: "Bayshore"; src: url('./Bayshore.otf'); } 
+@font-face {
+	font-family: 'Bayshore';
+	src: url('../Bayshore/Bayshore.eot'), /* IE9 Compat Modes */
+		 url('../Bayshore/Bayshore.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../Bayshore/Bayshore.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../Bayshore/Bayshore.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../Bayshore/Bayshore.woff2') format('svg'), /* Legacy iOS */
+		 url('../Bayshore/Bayshore.svg#Bayshore') format('svg'); /* Legacy iOS */
+  }
 
 
 /* ================================================== */
@@ -138,17 +145,24 @@ body.de_light {
 
 /* ================================================== */
 
-
 a p.instagram {
 	font-size: 18px;
 	text-decoration: none;
 	color:#ed96a8;
+	justify-content: center;
+	align-self: center;
 }
 
 a p.instagram i {
 	font-size: 20px;
 	color:#ed96a8;
 	font-weight: bold;
+	text-decoration: none;
+	background: white;
+}
+
+a p.instagram i :hover {
+	background: white;
 }
 
 a p.instagram:hover {
@@ -6946,4 +6960,41 @@ a, img {
 
 .mt-12em {
 	margin-top: 12em;
+}
+
+.contact-content {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-buttons-flex-text {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: normal;
+}
+
+.contact-buttons-flex {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.contact-buttons-flex a {
+	margin: 10px;
+	padding: 15px;
+	font-size: 1em;
+}
+
+.contact-buttons-flex a div {
+	padding: 15px;
+	font-size: 1em;
+
 }

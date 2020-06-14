@@ -30,7 +30,12 @@ $(document).ready(function() {
             disabled: "true",
             value: "Sending..."
         }), $.post("rsvp.php", $("#contact_form").serialize(), function(a) {
-            "sent" == a ? ($("#submit").remove(), $("#mail_success").fadeIn(500)) : ($("#mail_fail").fadeIn(500), $("#send_message").removeAttr("disabled").attr("value", "Send The Message"))
-        }))
+            /*"sent" == a ?*/ ($("#submit").remove(), $("#mail_success").fadeIn(500)) //: ($("#mail_fail").fadeIn(500), $("#send_message").removeAttr("disabled").attr("value", "Send The Message"))
+            if ("sent" == a) {
+                console.log("Success")
+            } else (
+                console.log("Failure")
+            )
+        }));
     })
 });
